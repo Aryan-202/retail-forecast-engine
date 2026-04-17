@@ -1,5 +1,6 @@
-install.packages("readr")
 library(readr)
 
-data <- read_csv("data/raw/train.csv")
+data = read.csv(file = "data/raw/train.csv")
 head(data)
+
+sum(is.na(data))
