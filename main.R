@@ -1,6 +1,3 @@
-library(readr)
-
-data = read.csv(file = "data/raw/train.csv")
-head(data)
-
-sum(is.na(data))
+source("R/data_cleaning.R")
+source("R/feature_engineering.R")
+source("R/forecasting_model.R")
